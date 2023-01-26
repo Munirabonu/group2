@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  background-color: #5855e7;
+}
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+.nav_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_list {
+  display: flex;
+  gap: 42px;
+}
+.nav_list li {
+  list-style-type: none;
+}
+.nav_list li a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.nav_btn {
+  width: 267px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.icon_wrap {
+    display: none;
+}
+
+@media  (max-width:375px){
+    body {
+        background: url(./media/image/bg.png);
+        background-attachment: fixed;
+    }
+    nav {
+        background-color: white;
+    }
+    .container {
+        width: 300px;
+    }
+    .container ul {
+        display: none;
+    }
+    .nav_wrap .logo {
+        width: 80px;
+    }
+    .nav_btn {
+        display: none;
+    }
+    .icon_wrap {
+        display: inline-block;
+    }
+}
+[type='checkbox']:checked ~label {
+    background: #5855e7;
+}

@@ -48,33 +48,112 @@ nav {
   color: #000000;
 }
 .icon_wrap {
-    display: none;
+  display: none;
 }
 
-@media  (max-width:375px){
-    body {
-        background: url(./media/image/bg.png);
-        background-attachment: fixed;
-    }
-    nav {
-        background-color: white;
-    }
-    .container {
-        width: 300px;
-    }
-    .container ul {
-        display: none;
-    }
-    .nav_wrap .logo {
-        width: 80px;
-    }
-    .nav_btn {
-        display: none;
-    }
-    .icon_wrap {
-        display: inline-block;
-    }
+@media (max-width: 375px) {
+  body {
+    background: url(./media/image/bg.png);
+    background-attachment: fixed;
+  }
+  nav {
+    background-color: white;
+  }
+  .container {
+    width: 300px;
+  }
+  .container ul {
+    display: none;
+  }
+  .nav_wrap .logo {
+    width: 80px;
+  }
+  .nav_btn {
+    display: none;
+  }
+  .icon_wrap {
+    display: inline-block;
+  }
 }
-[type='checkbox']:checked ~label {
-    background: #5855e7;
+[type="checkbox"]:checked ~ label {
+  background: #5855e7;
 }
+
+/* ----------------------- about section -------------------------- */
+
+@font-face {
+  font-family: "Gilroy-Bold-ttf";
+  src: url(media/Gilroy/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "Gilroy-Medium-ttf";
+  src: url(media/Gilroy/Gilroy-Medium.ttf);
+}
+/* ------about image------- */
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 214px 138px;
+  gap: 44px;
+}
+
+.about_img img {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: 0.5s all;
+}
+
+.about_img img:hover {
+  transform: scale(1.03);
+}
+
+/* --------about text-------- */
+.about_text {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.about_text_heading {
+  font-family: "Gilroy-Bold-ttf";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000000;
+}
+.about_text_paragraph {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  font-family: "Gilroy-Medium-ttf";
+  color: #000000;
+}
+
+@media only screen and (max-width: 375px) {
+  .about {
+    flex-direction: column;
+    position: relative;
+    padding: 130px 37px 0px 37px;
+  }
+
+  .about_text_heading {
+    position: absolute;
+    top: 65px;
+    left: 135px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .about_img img {
+    width: 300.12px;
+    height: 276px;
+    background-color: red;
+  }
+
+  .about_text_paragraph {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+/* ----------------------- about section end -------------------------- */

@@ -78,3 +78,133 @@ nav {
 [type='checkbox']:checked ~label {
     background: #5855e7;
 }
+
+/* -------------------Cards Section -------------------*/
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url(gilroy/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url(gilroy/Gilroy-Bold.ttf);
+}
+
+.info_cards {
+  margin-top: 145px;
+  position: relative;
+  padding: 0px 183px;
+}
+.heading_1 {
+  text-align: center;
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 119px;
+  color: #eeeeee;
+}
+.heading_2 {
+  position: absolute;
+  left: 690px;
+  top: 75px;
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000000;
+}
+.wrap_card_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  margin-top:85px;
+}
+.wrap_box {
+  display: flex;
+  gap: 85px;
+}
+.card_1 {
+  text-align: center;
+  background: #5855e7;
+  box-shadow: 0px 0px 35px rgba(17, 17, 17, 0.25);
+  border-radius: 15px;
+}
+.card_1 img {
+  width: 265px;
+  height: 251px;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+.card_1 h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  font-family: "Gilroy-Medium";
+  padding-top: 25px;
+  color: #fafbfd;
+}
+.card_1 h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Gilroy-Medium";
+  color: #ffffff;
+}
+.card_1 p {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  font-family: "Gilroy-Medium";
+  padding: 20px 0px 30px 0px;
+  color: #ffffff;
+}
+.card_1 button {
+  background: #ffffff;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 5px 24px;
+  margin-bottom: 30px;
+  border: none;
+  color: #6347eb;
+  font-family: "Gilroy-Medium";
+}
+
+@media screen and (max-width: 375px) {
+  .wrap_box {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .info_cards {
+    margin-top: 67px;
+    position: relative;
+    padding: 0px 60px;
+  }
+
+  .heading_1 {
+    font-size: 72px;
+    line-height: 89px;
+  }
+  .heading_2 {
+    font-size: 32px;
+    left: 130px;
+    top: 55px;
+    line-height: 40px;
+  }
+  .wrap_card_items {
+    margin-top: 75px;
+  }
+}
+
+/* ------------------- /Cards Section -------------------*/
+

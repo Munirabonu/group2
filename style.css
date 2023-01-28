@@ -9,22 +9,27 @@
 nav {
   background-color: #5855e7;
 }
+
 .container {
   width: 1180px;
   margin: 0 auto;
 }
+
 .nav_wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav_list {
   display: flex;
   gap: 42px;
 }
+
 .nav_list li {
   list-style-type: none;
 }
+
 .nav_list li a {
   font-weight: 500;
   font-size: 24px;
@@ -40,6 +45,7 @@ nav {
   background: #ffffff;
   border-radius: 5px;
 }
+
 .nav_btn {
   width: 267px;
   height: 50px;
@@ -47,34 +53,153 @@ nav {
   line-height: 28px;
   color: #000000;
 }
+
 .icon_wrap {
-    display: none;
+  display: none;
 }
 
-@media  (max-width:375px){
-    body {
-        background: url(./media/image/bg.png);
-        background-attachment: fixed;
-    }
-    nav {
-        background-color: white;
-    }
-    .container {
-        width: 300px;
-    }
-    .container ul {
-        display: none;
-    }
-    .nav_wrap .logo {
-        width: 80px;
-    }
-    .nav_btn {
-        display: none;
-    }
-    .icon_wrap {
-        display: inline-block;
-    }
+.main {
+  background-color: #5855E7;
 }
-[type='checkbox']:checked ~label {
-    background: #5855e7;
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+  gap: 10px;
+
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 91px;
+
+}
+
+.main-item {
+  padding: 20px;
+  width: 301px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-title {
+  text-align: center;
+  padding-top: 73px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.main-item h3 {
+  width: 285px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: -1px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.main-item img {
+  margin: 0;
+  padding: 0;
+}
+
+.main-item p {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+
+
+
+
+@media (max-width:375px) {
+  body {
+    background: url(./media/image/bg.png);
+    background-attachment: fixed;
+  }
+
+  nav {
+    background-color: white;
+  }
+
+  .container {
+    width: 300px;
+  }
+
+  .container ul {
+    display: none;
+  }
+
+  .nav_wrap .logo {
+    width: 80px;
+  }
+
+  .nav_btn {
+    display: none;
+  }
+
+  .icon_wrap {
+    display: inline-block;
+  }
+
+  /* MAIN-CIRKLE-MEDIA */
+
+
+  .main-wrapper {
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+
+  .main-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .main-item {
+    width: 270px;
+
+  }
+
+  .main-item img {
+    width: 209px;
+    /* height: 200px; */
+  }
+
+  .main-item h3 {
+    width: 260px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .main-item p {
+    width: 260px;
+    font-size: 14px;
+  }
+
+  /* .first-paragraph {
+    line-height: 19px;
+
+  } */
+
+}
+
+
+[type='checkbox']:checked~label {
+  background: #5855e7;
 }

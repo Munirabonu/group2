@@ -159,6 +159,9 @@ header {
   }
 
   /* header style start */
+  header {
+    background: none;
+  }
   .header-wrap {
     flex-direction: column;
     margin-top: 12rem;
